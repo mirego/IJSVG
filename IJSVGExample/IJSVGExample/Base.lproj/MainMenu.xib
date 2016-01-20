@@ -690,7 +690,7 @@
                     </customView>
                     <customView id="bHV-ou-brV" customClass="SVGExampleView3">
                         <rect key="frame" x="0.0" y="227" width="161" height="228"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                     </customView>
                     <customView id="osq-NY-OyC" customClass="SVGExampleView4">
                         <rect key="frame" x="160" y="227" width="236" height="228"/>
