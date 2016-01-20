@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Curtis Hard. All rights reserved.
 //
 
+#import <Cocoa/Cocoa.h>
 #import <Foundation/Foundation.h>
 
 @interface NSBezierPath (IJSVGAdditions)
