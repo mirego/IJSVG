@@ -177,6 +177,15 @@ static NSColor * _baseColor = nil;
     return [_group glyphs];
 }
 
+- (NSSize)size {
+    return NSMakeSize(_group.proposedViewSize.width, _group.proposedViewSize.height);
+}
+
+- (NSImage *)imageWithScale:(float)scale
+{
+    NSSize scaledSize = NSMakeSize(_group.proposedViewSize.width * scale, _group.proposedViewSize.height * scale);
+    return [self imageWithSize:scaledSize];
+}
 - (NSImage *)imageWithSize:(NSSize)aSize
 {
     return [self imageWithSize:aSize
@@ -294,7 +303,13 @@ static NSColor * _baseColor = nil;
     return [self drawInRect:rect
                      error:nil];
 }
-
+- (BOOL)drawInRect:(NSRect)rect
+            context:(CGContextRef)ref
+             error:(NSError **)error{
+    return [self _drawInRect:rect
+                     context:ref
+                       error:error];
+}
 - (BOOL)drawInRect:(NSRect)rect
              error:(NSError **)error
 {
