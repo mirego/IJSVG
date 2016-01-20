@@ -177,6 +177,10 @@ static NSColor * _baseColor = nil;
     return [_group glyphs];
 }
 
+- (NSSize)size {
+    return NSMakeSize(_group.proposedViewSize.width, _group.proposedViewSize.height);
+}
+
 - (NSImage *)imageWithSize:(NSSize)aSize
 {
     return [self imageWithSize:aSize

@@ -75,5 +75,6 @@ handleForeignObject:(IJSVGForeignObject *)foreignObject
 - (NSData *)PDFDataWithRect:(NSRect)rect;
 - (NSData *)PDFDataWithRect:(NSRect)rect
                       error:(NSError **)error;
+- (NSSize)size;
 
 @end
