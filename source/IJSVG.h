@@ -58,6 +58,7 @@ handleForeignObject:(IJSVGForeignObject *)foreignObject
 - (id)initWithFilePathURL:(NSURL *)aURL
                     error:(NSError **)error
                  delegate:(id<IJSVGDelegate>)delegate;
+- (NSImage *)imageWithScale:(float)scale;
 - (NSImage *)imageWithSize:(NSSize)aSize;
 - (NSImage *)imageWithSize:(NSSize)aSize
                      error:(NSError **)error;

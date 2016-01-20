@@ -181,6 +181,11 @@ static NSColor * _baseColor = nil;
     return NSMakeSize(_group.proposedViewSize.width, _group.proposedViewSize.height);
 }
 
+- (NSImage *)imageWithScale:(float)scale
+{
+    NSSize scaledSize = NSMakeSize(_group.proposedViewSize.width * scale, _group.proposedViewSize.height * scale);
+    return [self imageWithSize:scaledSize];
+}
 - (NSImage *)imageWithSize:(NSSize)aSize
 {
     return [self imageWithSize:aSize
