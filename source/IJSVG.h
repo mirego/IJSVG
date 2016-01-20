@@ -70,6 +70,9 @@ handleForeignObject:(IJSVGForeignObject *)foreignObject
 - (BOOL)drawInRect:(NSRect)rect;
 - (BOOL)drawInRect:(NSRect)rect
              error:(NSError **)error;
+- (BOOL)drawInRect:(NSRect)rect
+           context:(CGContextRef)ref
+             error:(NSError **)error;
 - (NSArray *)colors;
 - (NSData *)PDFData;
 - (NSData *)PDFData:(NSError **)error;

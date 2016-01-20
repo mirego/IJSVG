@@ -303,7 +303,13 @@ static NSColor * _baseColor = nil;
     return [self drawInRect:rect
                      error:nil];
 }
-
+- (BOOL)drawInRect:(NSRect)rect
+            context:(CGContextRef)ref
+             error:(NSError **)error{
+    return [self _drawInRect:rect
+                     context:ref
+                       error:error];
+}
 - (BOOL)drawInRect:(NSRect)rect
              error:(NSError **)error
 {
